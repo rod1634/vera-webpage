@@ -1,0 +1,140 @@
+{
+  "nav": {
+    "howItWorks": "How it works",
+    "benefits": "Benefits",
+    "faq": "FAQ",
+    "joinWaitlist": "Join waitlist"
+  },
+  "hero": {
+    "tagline": "Your AI nutrition coach",
+    "title": "Smart nutrition,",
+    "titleHighlight": "real flexibility.",
+    "subtitle": "Vēra adapts your meal plan in real-time based on your progress, adherence, and lifestyle. No rigid diets, no starting over.",
+    "cta": "Join the waitlist",
+    "ctaSubtext": "Early access to the closed beta"
+  },
+  "problem": {
+    "title": "The problem with traditional diets",
+    "items": [
+      {
+        "title": "Static plans",
+        "description": "Diets don't adapt to your daily life, routine changes, or unexpected events."
+      },
+      {
+        "title": "Lack of follow-up",
+        "description": "Between appointments with your nutritionist, you have no guidance or feedback."
+      },
+      {
+        "title": "Contradictory information",
+        "description": "Miracle diets, myths, and misleading marketing everywhere."
+      }
+    ]
+  },
+  "howItWorks": {
+    "title": "How Vēra works",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Initial diagnosis",
+        "description": "We analyze your profile, goals, history, and food preferences."
+      },
+      {
+        "number": "02",
+        "title": "Personalized plan",
+        "description": "We create your macro and calorie plan based on nutritional science."
+      },
+      {
+        "number": "03",
+        "title": "Daily adjustments",
+        "description": "AI redistributes meals when you deviate from the plan."
+      },
+      {
+        "number": "04",
+        "title": "Periodic reviews",
+        "description": "Weekly and monthly evaluations to optimize your progress."
+      }
+    ]
+  },
+  "benefits": {
+    "title": "Why Vēra?",
+    "items": [
+      {
+        "title": "Dynamic plans",
+        "description": "We automatically recalculate calories and macros based on your progress and adherence."
+      },
+      {
+        "title": "Smart balance",
+        "description": "Ate too much? Skipped a meal? Vēra redistributes your day."
+      },
+      {
+        "title": "Clinical safety",
+        "description": "Safety tools review limits before executing changes."
+      },
+      {
+        "title": "Total transparency",
+        "description": "Every adjustment is explained with reasons, expected impact, and undo option."
+      },
+      {
+        "title": "With or without nutritionist",
+        "description": "Autonomous mode or as a copilot for your health professional."
+      },
+      {
+        "title": "Data-driven",
+        "description": "17 critical variables monitored for precise decisions."
+      }
+    ]
+  },
+  "waitlist": {
+    "title": "Join the waitlist",
+    "subtitle": "Be among the first to try Vēra and get early access to the closed beta.",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Your name",
+      "email": "Email",
+      "emailPlaceholder": "you@email.com",
+      "userType": "How do you identify?",
+      "userTypes": {
+        "athlete": "Athlete",
+        "nutritionist": "Nutritionist",
+        "active_person": "Active person"
+      },
+      "submit": "Join waitlist",
+      "submitting": "Submitting..."
+    },
+    "success": {
+      "title": "You're on the list!",
+      "message": "We'll contact you soon with beta access."
+    },
+    "errors": {
+      "email_exists": "This email is already registered on the waitlist.",
+      "unknown_error": "An error occurred. Please try again.",
+      "required": "This field is required",
+      "invalid_email": "Invalid email"
+    }
+  },
+  "faq": {
+    "title": "Frequently asked questions",
+    "items": [
+      {
+        "question": "Do I need to have a nutritionist?",
+        "answer": "No, it's not necessary. Vēra can work autonomously or as a complement to your current nutritionist. In companion mode, the AI respects the clinical plan and proposes adjustments for professional approval."
+      },
+      {
+        "question": "What data does Vēra collect?",
+        "answer": "We collect information about your nutritional profile, goals, weight, adherence, and food preferences. All data is handled with strict privacy and never shared with third parties."
+      },
+      {
+        "question": "When does the beta start?",
+        "answer": "We are in active development phase. The first waitlist users will receive access in the coming weeks. We'll notify you by email when your spot is ready."
+      },
+      {
+        "question": "Does Vēra replace a health professional?",
+        "answer": "No. Vēra is a support tool that amplifies adherence and follow-up, but does not substitute the judgment of a health professional for specific clinical cases."
+      }
+    ]
+  },
+  "footer": {
+    "tagline": "The truth about your nutrition.",
+    "rights": "All rights reserved."
+  }
+}
