@@ -1,0 +1,16 @@
+# Dependencies
+node_modules
+
+# Build outputs
+dist
+dist-ssr
+
+# Environment files
+.env*
+*.local
+
+# Editor and OS junk
+.vscode/
+.idea/
+.DS_Store
+*.sw?
