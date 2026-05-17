@@ -68,6 +68,21 @@
     from { opacity: 0; transform: scale(0.96); }
     to { opacity: 1; transform: scale(1); }
   }
+  @keyframes rise {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes rise-rotate {
+    from { opacity: 0; transform: translateY(28px) rotate(0deg); }
+    to   { opacity: 1; transform: translateY(0) rotate(var(--rot, 0deg)); }
+  }
+  @keyframes draw-ring {
+    to { stroke-dashoffset: var(--target); }
+  }
+  @keyframes pulse-dot {
+    0%, 100% { transform: scale(1); opacity: 0.6; }
+    50%      { transform: scale(1.4); opacity: 0; }
+  }
 }
 
 @layer base {
@@ -112,6 +127,18 @@
 
   /* Soft shadow (guide §3) */
   .shadow-soft { box-shadow: var(--shadow-soft); }
+  .shadow-floating { box-shadow: 0 24px 48px -18px rgba(18,18,18,0.22), 0 4px 14px rgba(18,18,18,0.06); }
+
+  /* Reveal-on-scroll */
+  .reveal { opacity: 0; transform: translateY(28px); transition: opacity 700ms var(--ease-spring), transform 700ms var(--ease-spring); }
+  .reveal.in { opacity: 1; transform: translateY(0); }
+  .reveal-stagger > * { opacity: 0; transform: translateY(20px); transition: opacity 700ms var(--ease-spring), transform 700ms var(--ease-spring); }
+  .reveal-stagger.in > *:nth-child(1) { opacity: 1; transform: none; transition-delay: 0ms; }
+  .reveal-stagger.in > *:nth-child(2) { opacity: 1; transform: none; transition-delay: 100ms; }
+  .reveal-stagger.in > *:nth-child(3) { opacity: 1; transform: none; transition-delay: 200ms; }
+  .reveal-stagger.in > *:nth-child(4) { opacity: 1; transform: none; transition-delay: 300ms; }
+  .reveal-stagger.in > *:nth-child(5) { opacity: 1; transform: none; transition-delay: 400ms; }
+  .reveal-stagger.in > *:nth-child(6) { opacity: 1; transform: none; transition-delay: 500ms; }
 
   /* Motion durations (guide §11) */
   .duration-fast   { transition-duration: 160ms; }

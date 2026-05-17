@@ -6,12 +6,39 @@
     "joinWaitlist": "Únete al waitlist"
   },
   "hero": {
-    "tagline": "Tu coach de nutrición con IA",
+    "tagline": "Nutrición que se adapta a ti",
     "title": "Nutrición inteligente,",
     "titleHighlight": "flexibilidad real.",
     "subtitle": "Vēra adapta tu plan de alimentación en tiempo real según tu progreso, adherencia y estilo de vida. Sin dietas rígidas, sin empezar de cero.",
     "cta": "Únete al waitlist",
-    "ctaSubtext": "Acceso anticipado a la beta cerrada"
+    "ctaSubtext": "Acceso anticipado\na la beta cerrada",
+    "trust": {
+      "beta": "Beta cerrada · próxima apertura",
+      "country": "Hecho en Venezuela",
+      "noRigidDiets": "Sin dietas rígidas"
+    },
+    "artifact": {
+      "label": "Vēra",
+      "message": "Vas bien en proteína pero las grasas están algo bajas. Considera agregar <0>aguacate</0> o <1>frutos secos</1> a tu próxima comida.",
+      "photoCaption": "Plato Mediterráneo",
+      "macrosTitle": "Hoy · Macros",
+      "macrosTime": "14:32",
+      "kcalLabel": "kcal",
+      "protein": "Proteína",
+      "carbs": "Carbos",
+      "fats": "Grasas"
+    }
+  },
+  "manifesto": {
+    "body": "La nutrición debería adaptarse a ti, no al revés. Estamos construyendo Vēra para que tu plan evolucione con tu vida — no contra ella.",
+    "signature": "El equipo Vēra"
+  },
+  "chatPreview": {
+    "eyebrow": "Una conversación real",
+    "title": "Así te habla Vēra",
+    "userMessage": "¿Cómo voy hoy con mis macros?",
+    "assistantLabel": "Vēra",
+    "assistantMessage": "Vas bien en proteína pero las grasas están algo bajas. Considera agregar <0>aguacate</0> o <1>frutos secos</1> a tu próxima comida."
   },
   "problem": {
     "title": "El problema con las dietas tradicionales",
@@ -31,32 +58,46 @@
     ]
   },
   "howItWorks": {
-    "title": "Cómo funciona Vēra",
+    "eyebrow": "Cómo funciona",
+    "title": "Cuatro pasos para una nutrición",
+    "titleItalic": "que evoluciona contigo",
+    "subtitle": "Vēra empieza por entenderte. Después construye tu plan, lo ajusta a diario y revisa contigo cada semana.",
     "steps": [
       {
         "number": "01",
+        "tag": "Empezamos",
         "title": "Diagnóstico inicial",
         "description": "Analizamos tu perfil, objetivos, historial y preferencias alimentarias."
       },
       {
         "number": "02",
+        "tag": "Tu plan",
         "title": "Plan personalizado",
         "description": "Creamos tu plan de macros y calorías basado en ciencia nutricional."
       },
       {
         "number": "03",
+        "tag": "Día a día",
         "title": "Ajustes diarios",
         "description": "La IA redistribuye comidas cuando te desvías del plan."
       },
       {
         "number": "04",
+        "tag": "En el tiempo",
         "title": "Controles periódicos",
         "description": "Evaluaciones semanales y mensuales para optimizar tu progreso."
       }
-    ]
+    ],
+    "closing": "Sin dietas rígidas. Sin empezar de cero.",
+    "closingHighlight": "Tu plan aprende contigo.",
+    "closingCta": "Únete al waitlist"
   },
   "benefits": {
-    "title": "¿Por qué Vēra?",
+    "eyebrow": "Por qué Vēra",
+    "title": "Construido para",
+    "titleItalic": "respetar tu día real",
+    "subtitle": "Seis principios que separan a Vēra de cualquier app de macros que hayas probado.",
+    "vizVariables": "variables · tiempo real",
     "items": [
       {
         "title": "Planes dinámicos",
@@ -85,8 +126,17 @@
     ]
   },
   "waitlist": {
-    "title": "Únete a la lista de espera",
-    "subtitle": "Sé de los primeros en probar Vēra y recibe acceso anticipado a la beta cerrada.",
+    "eyebrow": "Beta cerrada · acceso limitado",
+    "title": "Sé de los primeros en",
+    "titleItalic": "probar Vēra",
+    "subtitle": "La beta abre pronto. Quienes se unan ahora reciben acceso anticipado y precio fundador de por vida.",
+    "perks": [
+      { "title": "Acceso anticipado", "description": "Eres de los primeros en usar la beta cerrada cuando abra." },
+      { "title": "Precio fundador", "description": "Tarifa especial bloqueada de por vida para usuarios del waitlist." },
+      { "title": "Tu opinión moldea el producto", "description": "Acceso directo al equipo y prioridad en feedback de funcionalidades." }
+    ],
+    "formEyebrow": "Únete al waitlist",
+    "formTitle": "Reserva tu lugar",
     "form": {
       "name": "Nombre",
       "namePlaceholder": "Tu nombre",
@@ -113,7 +163,8 @@
     }
   },
   "faq": {
-    "title": "Preguntas frecuentes",
+    "eyebrow": "Preguntas frecuentes",
+    "title": "Lo que probablemente te preguntas",
     "items": [
       {
         "question": "¿Necesito tener un nutricionista?",
@@ -134,7 +185,24 @@
     ]
   },
   "footer": {
-    "tagline": "La verdad sobre tu nutrición.",
-    "rights": "Todos los derechos reservados."
+    "tagline": "La verdad sobre tu nutrición. Un plan que aprende contigo, no contra ti.",
+    "rights": "Todos los derechos reservados.",
+    "flag": "Hecho en Venezuela",
+    "latin": "del latín, \"verdad\"",
+    "columns": {
+      "product": "Producto",
+      "company": "Compañía",
+      "legal": "Legal"
+    },
+    "links": {
+      "howItWorks": "Cómo funciona",
+      "benefits": "Beneficios",
+      "waitlist": "Waitlist",
+      "about": "Sobre nosotros",
+      "contact": "Contacto",
+      "press": "Prensa",
+      "privacy": "Privacidad",
+      "terms": "Términos"
+    }
   }
 }

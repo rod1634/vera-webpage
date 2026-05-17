@@ -6,12 +6,39 @@
     "joinWaitlist": "Join waitlist"
   },
   "hero": {
-    "tagline": "Your AI nutrition coach",
+    "tagline": "Nutrition that adapts to you",
     "title": "Smart nutrition,",
     "titleHighlight": "real flexibility.",
     "subtitle": "Vēra adapts your meal plan in real-time based on your progress, adherence, and lifestyle. No rigid diets, no starting over.",
     "cta": "Join the waitlist",
-    "ctaSubtext": "Early access to the closed beta"
+    "ctaSubtext": "Early access\nto the closed beta",
+    "trust": {
+      "beta": "Closed beta · opening soon",
+      "country": "Made in Venezuela",
+      "noRigidDiets": "No rigid diets"
+    },
+    "artifact": {
+      "label": "Vēra",
+      "message": "You're on track with protein but fats are a little low. Consider adding <0>avocado</0> or <1>nuts</1> to your next meal.",
+      "photoCaption": "Mediterranean bowl",
+      "macrosTitle": "Today · Macros",
+      "macrosTime": "2:32 PM",
+      "kcalLabel": "kcal",
+      "protein": "Protein",
+      "carbs": "Carbs",
+      "fats": "Fats"
+    }
+  },
+  "manifesto": {
+    "body": "Nutrition should adapt to you, not the other way around. We're building Vēra so your plan evolves with your life — not against it.",
+    "signature": "The Vēra team"
+  },
+  "chatPreview": {
+    "eyebrow": "A real conversation",
+    "title": "How Vēra talks to you",
+    "userMessage": "How am I doing with my macros today?",
+    "assistantLabel": "Vēra",
+    "assistantMessage": "You're on track with protein but fats are a little low. Consider adding <0>avocado</0> or <1>nuts</1> to your next meal."
   },
   "problem": {
     "title": "The problem with traditional diets",
@@ -31,32 +58,46 @@
     ]
   },
   "howItWorks": {
-    "title": "How Vēra works",
+    "eyebrow": "How it works",
+    "title": "Four steps to a nutrition plan",
+    "titleItalic": "that evolves with you",
+    "subtitle": "Vēra starts by understanding you. Then it builds your plan, adjusts it daily, and reviews with you every week.",
     "steps": [
       {
         "number": "01",
+        "tag": "We start",
         "title": "Initial diagnosis",
         "description": "We analyze your profile, goals, history, and food preferences."
       },
       {
         "number": "02",
+        "tag": "Your plan",
         "title": "Personalized plan",
         "description": "We create your macro and calorie plan based on nutritional science."
       },
       {
         "number": "03",
+        "tag": "Day to day",
         "title": "Daily adjustments",
         "description": "AI redistributes meals when you deviate from the plan."
       },
       {
         "number": "04",
+        "tag": "Over time",
         "title": "Periodic reviews",
         "description": "Weekly and monthly evaluations to optimize your progress."
       }
-    ]
+    ],
+    "closing": "No rigid diets. No starting over.",
+    "closingHighlight": "Your plan learns with you.",
+    "closingCta": "Join the waitlist"
   },
   "benefits": {
-    "title": "Why Vēra?",
+    "eyebrow": "Why Vēra",
+    "title": "Built to",
+    "titleItalic": "respect your actual day",
+    "subtitle": "Six principles that separate Vēra from any macro app you've tried before.",
+    "vizVariables": "variables · real-time",
     "items": [
       {
         "title": "Dynamic plans",
@@ -85,8 +126,17 @@
     ]
   },
   "waitlist": {
-    "title": "Join the waitlist",
-    "subtitle": "Be among the first to try Vēra and get early access to the closed beta.",
+    "eyebrow": "Closed beta · limited access",
+    "title": "Be among the first to",
+    "titleItalic": "try Vēra",
+    "subtitle": "The beta opens soon. Those who join now get early access and a founder price locked in for life.",
+    "perks": [
+      { "title": "Early access", "description": "You're among the first to use the closed beta when it opens." },
+      { "title": "Founder pricing", "description": "Special rate locked in for life for waitlist users." },
+      { "title": "Your input shapes the product", "description": "Direct access to the team and priority on feature feedback." }
+    ],
+    "formEyebrow": "Join the waitlist",
+    "formTitle": "Reserve your spot",
     "form": {
       "name": "Name",
       "namePlaceholder": "Your name",
@@ -113,7 +163,8 @@
     }
   },
   "faq": {
-    "title": "Frequently asked questions",
+    "eyebrow": "Frequently asked questions",
+    "title": "What you're probably wondering",
     "items": [
       {
         "question": "Do I need to have a nutritionist?",
@@ -134,7 +185,24 @@
     ]
   },
   "footer": {
-    "tagline": "The truth about your nutrition.",
-    "rights": "All rights reserved."
+    "tagline": "The truth about your nutrition. A plan that learns with you, not against you.",
+    "rights": "All rights reserved.",
+    "flag": "Made in Venezuela",
+    "latin": "from Latin, \"truth\"",
+    "columns": {
+      "product": "Product",
+      "company": "Company",
+      "legal": "Legal"
+    },
+    "links": {
+      "howItWorks": "How it works",
+      "benefits": "Benefits",
+      "waitlist": "Waitlist",
+      "about": "About us",
+      "contact": "Contact",
+      "press": "Press",
+      "privacy": "Privacy",
+      "terms": "Terms"
+    }
   }
 }
