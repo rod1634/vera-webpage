@@ -1,11 +1,11 @@
 import { useTranslation } from 'react-i18next'
-import { 
-  RefreshCw, 
-  Scale, 
-  Shield, 
-  Eye, 
-  Users, 
-  BarChart3 
+import {
+  RefreshCw,
+  Scale,
+  Shield,
+  Eye,
+  Users,
+  BarChart3
 } from 'lucide-react'
 
 const icons = [RefreshCw, Scale, Shield, Eye, Users, BarChart3]
@@ -19,25 +19,25 @@ export function Benefits() {
   }>
 
   return (
-    <section id="benefits" className="py-24">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl sm:text-4xl font-serif text-center mb-16">
+    <section id="benefits" className="py-xl md:py-24">
+      <div className="max-w-6xl mx-auto px-md md:px-lg">
+        <h2 className="text-title sm:!text-[34px] sm:!leading-[1.12] text-center mb-xl">
           {t('benefits.title')}
         </h2>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-md">
           {benefits.map((benefit, index) => {
             const Icon = icons[index]
             return (
               <div
                 key={index}
-                className="bg-white rounded-xl p-6 border border-charcoal/5 hover:shadow-lg transition-shadow"
+                className="bg-surface backdrop-blur-md border border-stroke-inner outline outline-1 outline-border-subtle -outline-offset-1 rounded-lg p-lg shadow-soft transition-transform duration-medium hover:-translate-y-0.5"
               >
-                <div className="w-12 h-12 rounded-lg bg-sage/10 flex items-center justify-center mb-4">
-                  <Icon className="h-6 w-6 text-sage" />
+                <div className="w-11 h-11 rounded-md bg-surface-subtle border border-stroke-inner flex items-center justify-center mb-sm">
+                  <Icon className="h-5 w-5 text-accent" strokeWidth={1.75} />
                 </div>
-                <h3 className="text-lg font-semibold mb-2">{benefit.title}</h3>
-                <p className="text-charcoal/70 leading-relaxed">
+                <h3 className="text-headline mb-1 text-text-primary">{benefit.title}</h3>
+                <p className="text-callout text-text-secondary leading-relaxed">
                   {benefit.description}
                 </p>
               </div>

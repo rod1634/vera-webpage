@@ -13,42 +13,51 @@ export function FAQ() {
   }>
 
   return (
-    <section id="faq" className="py-24">
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl sm:text-4xl font-serif text-center mb-16">
+    <section id="faq" className="py-xl md:py-24">
+      <div className="max-w-3xl mx-auto px-md md:px-lg">
+        <h2 className="text-title sm:!text-[34px] sm:!leading-[1.12] text-center mb-xl">
           {t('faq.title')}
         </h2>
 
-        <div className="space-y-4">
-          {faqs.map((faq, index) => (
-            <div
-              key={index}
-              className="bg-white rounded-xl border border-charcoal/5 overflow-hidden"
-            >
-              <button
-                onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                className="w-full flex items-center justify-between p-5 text-left"
-              >
-                <span className="font-medium pr-4">{faq.question}</span>
-                <ChevronDown
-                  className={cn(
-                    'h-5 w-5 text-charcoal/50 transition-transform flex-shrink-0',
-                    openIndex === index && 'rotate-180'
-                  )}
-                />
-              </button>
+        <div className="space-y-sm">
+          {faqs.map((faq, index) => {
+            const open = openIndex === index
+            return (
               <div
+                key={index}
                 className={cn(
-                  'overflow-hidden transition-all duration-300',
-                  openIndex === index ? 'max-h-96' : 'max-h-0'
+                  "bg-surface backdrop-blur-md border border-stroke-inner outline outline-1 -outline-offset-1 rounded-lg overflow-hidden transition-all duration-medium",
+                  open ? "outline-accent/30 shadow-soft" : "outline-border-subtle"
                 )}
               >
-                <p className="px-5 pb-5 text-charcoal/70 leading-relaxed">
-                  {faq.answer}
-                </p>
+                <button
+                  onClick={() => setOpenIndex(open ? null : index)}
+                  className="w-full flex items-center justify-between p-md text-left gap-sm"
+                >
+                  <span className="text-headline text-text-primary pr-sm">{faq.question}</span>
+                  <ChevronDown
+                    className={cn(
+                      'h-5 w-5 text-text-secondary transition-transform duration-medium flex-shrink-0',
+                      open && 'rotate-180 text-accent'
+                    )}
+                    strokeWidth={1.75}
+                  />
+                </button>
+                <div
+                  className={cn(
+                    'grid transition-[grid-template-rows] duration-medium ease-out',
+                    open ? 'grid-rows-[1fr]' : 'grid-rows-[0fr]'
+                  )}
+                >
+                  <div className="overflow-hidden">
+                    <p className="px-md pb-md text-body text-text-secondary leading-relaxed">
+                      {faq.answer}
+                    </p>
+                  </div>
+                </div>
               </div>
-            </div>
-          ))}
+            )
+          })}
         </div>
       </div>
     </section>

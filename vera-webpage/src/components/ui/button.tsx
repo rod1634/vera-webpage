@@ -3,25 +3,31 @@ import { cva, type VariantProps } from "class-variance-authority"
 import { cn } from "@/lib/utils"
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center whitespace-nowrap rounded-lg text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
+  "inline-flex items-center justify-center whitespace-nowrap rounded-md font-semibold transition-all duration-fast ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/40 focus-visible:ring-offset-2 focus-visible:ring-offset-transparent disabled:pointer-events-none disabled:opacity-50 select-none active:scale-[0.985]",
   {
     variants: {
       variant: {
-        default: "bg-charcoal text-cream hover:bg-charcoal-light",
-        outline: "border border-charcoal bg-transparent hover:bg-charcoal/5",
-        ghost: "hover:bg-charcoal/5",
-        link: "text-charcoal underline-offset-4 hover:underline",
+        primary:
+          "bg-accent text-white hover:bg-accent-strong shadow-soft",
+        primaryGradient:
+          "bg-gradient-to-br from-accent to-accent-strong text-white hover:from-accent-strong hover:to-accent-strong shadow-soft",
+        secondary:
+          "bg-surface text-text-primary border border-border-strong backdrop-blur-md hover:bg-surface-elevated",
+        ghost:
+          "text-accent hover:bg-surface-subtle",
+        destructive:
+          "bg-destructive text-white hover:brightness-95",
       },
       size: {
-        default: "h-11 px-6 py-2",
-        sm: "h-9 px-4",
-        lg: "h-12 px-8 text-base",
+        sm: "h-9  px-4 text-[15px] leading-none",
+        md: "h-11 px-6 text-[15px] leading-none",
+        lg: "h-12 px-6 text-[17px] leading-none",
         icon: "h-10 w-10",
       },
     },
     defaultVariants: {
-      variant: "default",
-      size: "default",
+      variant: "primary",
+      size: "md",
     },
   }
 )
@@ -30,11 +36,15 @@ export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement>,
     VariantProps<typeof buttonVariants> {}
 
+const LIGHT_TEXT_VARIANTS = new Set(["primary", "primaryGradient", "destructive"])
+
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ className, variant, size, ...props }, ref) => {
+  ({ className, variant, size, style, ...props }, ref) => {
+    const forceWhite = LIGHT_TEXT_VARIANTS.has(variant ?? "primary")
     return (
       <button
         className={cn(buttonVariants({ variant, size, className }))}
+        style={forceWhite ? { color: "#ffffff", ...style } : style}
         ref={ref}
         {...props}
       />
